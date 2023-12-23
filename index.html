@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>family home</title>
+     <meta charset="UTF-8">
+     <link . rel="stylesheet" . href="index.css">
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<body>
+       <script>
+            function submitform() {
+            window.alert("thank you for trusting our website")
+            }
+       </script>
+   <div class="progect">
+      <header >
+          <div class="logo" >
+                 <img src="logo (2).jpg" alt="">
+          </div>
+          <ul>
+                 <li> <a href="#home">home</a></li>
+                 <li><a href="#prod">products</a></li>
+                 <li> <a href="#sign">sign</a></li>
+          </ul>
+     </header>
+     <div id="home" class="home">
+           <img id="home_photo" src="background.jpg" alt="">
+           <div>
+                  <h1>Welcome</h1>
+                 <h2>our website privides you with all services related to electrical appliances</h2>
+          </div>
+          <div id="social">
+                 <a href="https://www.facebook.com/mariam.elbadrawy.9/" target="_blank"><img src="face.png" ></a>
+                 <span><a href="https://www.instagram.com/mariamelbadrawy/" target="_blank"><img src="insta.png"></a></span>
+                 <a href="https://www.whatsapp.com/" target="_blank"><img src="whats.png"></a>
+          </div>
+     </div>
+    
+      <main id="prod">
+          <h1>products</h1>
+         <div id="prod" class="product">
+               <div id="mobiles"> 
+                     <h2>Mobiles</h2>
+                     <a href=""><img src="phone (2).jpg" alt=""></a>
+              </div>
+              <div id="TVs"> 
+                     <h2>TVs</h2>
+                     <a href=""><img src="tvs (2).jpg" alt=""></a>
+              </div>
+              <div id="large_home_appliances"> 
+                     <h2>large Home Appliances</h2>
+                     <a href=""><img src="large (2).jpg" alt=""></a>
+              </div>
+              <div id="small_home_appliances"> 
+                     <h2>Small Home Appliances</h2> 
+                     <a href=""> <img src="small (2).jpg" alt=""></a>
+              </div>
+         </div>
+     </main>
+
+      <div id="sign" class="sign">
+           <img src="logo (2).jpg" alt="">
+           <form action="index.php" method="post" onsubmit="submitform()">
+                 <label for="txtbox1">First name : </label>
+                 <input id="txtbox1" type="text" name="first name" maxlength="30" placeholder="Ahmed" required/> &nbsp;&nbsp;&nbsp;
+                 <br>
+                 <br>
+                 <label for="txtbox2">last name : </label>
+                 <input id="txtbox2" type="text" name="last name" maxlength="30" placeholder="Ibrahim" required/> <br/>
+                 <br>
+                 <label for="female">female </label>
+                 <input id="female" type="radio" name="gender" value="f" />
+                 
+                 <label for="male">male </label>
+                 <input id="male" type="radio" name="gender" value="m" /> <br/>
+                 <br>
+                 <label for="txtbox3">Email : </label>
+                 <input id="txtbox3" type="email" name="email" placeholder="ahmed@gmail.com" required/> <br/>
+                 <br>
+                 <label for="txtbox4">password </label>
+                 <input id="txtbox4" type="password" name="paw" required/> <br/>
+                 <br>
+                 <label for="box">I agree with form conditions </label>
+                 <input id="box" type="checkbox" name="check" value="vall" />
+                 <br>
+                 <button type="submit" name="btntest" id="btn1">Send</button>
+                      
+                
+         </form>
+    </div>
+  </div>
+
+  <button type="submit" onclick="popup()";>read it!</button>
+
+
+<script>
+function popup(){
+       swal("Good job!", "You clicked the button!", "success");
+}
+
+
+
+</script>
+</body>
